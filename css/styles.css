@@ -1,109 +1,61 @@
 @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
 
 * {
-    margin: 5px 10px;
     padding: 0;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  html,
-  body {
-    height: 100%;
-  }
-  
-  body {
-	background-color: #A67A44;
-	color: white;
-    display: flex;
-    flex-flow: column nowrap;
-	min-width: 400px;
-	font-family: sans-serif;
-  }
-  
-  .header,
-  .round-heading {
+    margin: 15px 0 0 0;
+}
+
+body {
+	background: #767269;
+}
+
+h1 {
+	text-align: center;
 	font-family: Mansalva, cursive;
-	color: #400101;
-    flex-shrink: 0;
-    align-self: center;
-  }
-
-  .results {
-    align-self: center; 
-  }
-
-  ul {
-	list-style-type: none;
-	margin-bottom: 40px;
+	color: #423836;
 }
 
-ul li {
+ul {
+	list-style: none;
+	text-align: center;
+}
+
+li {
 	display: inline-block;
+	margin: 0;
 }
 
-.rock-btn,
-.paper-btn,
-.scissors-btn {
-	background-color: #D99E30;
-	color: #400101;
-	border: 1px solid #732002;
+button {
+	width: 100px;
+	margin-top: 15px;
+	padding: 6px 0;
+	background: #423836;
+	color: #BFAF97;
+	border: 1px solid #BFAF97;
 	border-radius: 4px;
-	padding: 10px;
-	font-size: 18px;
-	font-weight: bold;
 	cursor: help;
 }
 
-.game-result {
-	color: #400101;
-}
-
-.reset-btn {
-	background-color: #D94625;
-	color: white;
-	border: 1px solid white;
-	border-radius: 4px;
-	margin-top: 20px;
-	padding: 10px 40px;
-	font-size: 18px;
-	font-weight: bold;
-	cursor: help;
+button:hover {
+	color: orange;
+	border: none;
 }
 
 .scores {
-	margin-top: 55px;
+	text-align: center;
+	margin-top: 40px;
+	color: #423836;
+	font-family: sans-serif;
 }
 
-.score-heading {
-	color: #400101;
+#roundMessage {
+	margin-top: 15px;
+	text-align: center;
+	font-family: sans-serif;
+	color: orange;
 }
 
-.row {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-  }
-  
-  .column {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 100%;
-	flex: 1;
-  }
-  
-  .player-column,
-  .comp-column {
-	background-color: #732002;
-	color: #D99E30;
-	height: 100px;
-	border-radius: 4px;
-	  border: 1px solid #D99E30;
-  }
-
-  .comp-score, 
-  .player-score {
-	  color: white;
-	  padding-top: 10px;
-  }
+.vs {
+	color: orange;
+	padding: 0 10px;
+}
