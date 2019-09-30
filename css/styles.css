@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+
 * {
-    margin: 15px;
+    margin: 5px 10px;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
@@ -11,13 +13,18 @@
   }
   
   body {
-    font-family: sans-serif;
+	background-color: #A67A44;
+	color: white;
     display: flex;
     flex-flow: column nowrap;
-    min-width: 400px;
+	min-width: 400px;
+	font-family: sans-serif;
   }
   
-  .header {
+  .header,
+  .round-heading {
+	font-family: Mansalva, cursive;
+	color: #400101;
     flex-shrink: 0;
     align-self: center;
   }
@@ -27,5 +34,76 @@
   }
 
   ul {
-    list-style-type: none;
+	list-style-type: none;
+	margin-bottom: 40px;
 }
+
+ul li {
+	display: inline-block;
+}
+
+.rock-btn,
+.paper-btn,
+.scissors-btn {
+	background-color: #D99E30;
+	color: #400101;
+	border: 1px solid #732002;
+	border-radius: 4px;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: help;
+}
+
+.game-result {
+	color: #400101;
+}
+
+.reset-btn {
+	background-color: #D94625;
+	color: white;
+	border: 1px solid white;
+	border-radius: 4px;
+	margin-top: 20px;
+	padding: 10px 40px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: help;
+}
+
+.scores {
+	margin-top: 55px;
+}
+
+.score-heading {
+	color: #400101;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+  }
+  
+  .column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+  }
+  
+  .player-column,
+  .comp-column {
+	background-color: #732002;
+	color: #D99E30;
+	height: 100px;
+	border-radius: 4px;
+	  border: 1px solid #D99E30;
+  }
+
+  .comp-score, 
+  .player-score {
+	  color: white;
+	  padding-top: 10px;
+  }
